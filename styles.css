@@ -1,0 +1,25 @@
+body {
+	background-color: lightgoldenrodyellow;
+}
+h1{
+	font-size: 30px;
+	color: mediumblue;
+}
+h2{
+	font-size: 20px;
+	color: darkred;
+}
+
+.imp{
+	color: black;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+span{
+	text-transform: lowercase;
+	
+	color: hotpink;
+}
