@@ -2,20 +2,50 @@
 	margin: 0;
 	padding: 0;
 }
+/*background with speaker and gradient fade*/
 .header{
 	min-height: 100vh;
 	width:  100%;
-	background-image: linear-gradient(rgba(55, 55, 55, 0.7),rgba(4, 9, 30, 0.7)),url(img/speaker.jpg);
+	background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4, 9, 30, 0.7)),url(img/speaker1.jpeg);
 	background-position: center;
 	background-size: cover;
 	background-position: relative;
 }
 nav{
 	display: flex;
-	padding: 2% 6%;
+	padding: 0% 2%;
 	justify-content: space-between;
 	align-items: center;
 }
+/*logo image*/
 nav img{
-	width: 150px;
+	width: 200px;
+}
+
+/*navigation list layout*/
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+/*navigation list text*/
+.nav-links ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px
+}
+
+/*navigation link animations*/
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #1DCAD8;
+	display: block;
+	margin:  auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
 }
