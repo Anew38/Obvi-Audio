@@ -5,6 +5,7 @@
 	<title>Obvi Audio</title>
 	<link rel="icon"  href="img/icon.png">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <!-- font inputs? -->
 </head>
 <body>
@@ -13,7 +14,10 @@
 		<nav>
 			<!-- logo -->
 			<a href="index.html"> <img src="img/logo.png"></a>
-			<div class="nav-links">
+			<!-- id of div for opening/closing menu on mobile device -->
+			<!-- functions at the end of body tag -->
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="">HOME</a></li>
 					<li><a href="">ABOUT US</a></li>
@@ -22,10 +26,14 @@
 					<li><a href="">CONTACT US</a></li>
 				</ul>
 			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
 
-	<div classs = "text-box">
-		<h1></h1>
+	<div class = "text-box">
+		<h1>Quality Sound, Water Free</h1>
+		<p>Enjoying music poolside or even the ocean just got way easier with our breakthrough speaker. <br> Water can't drown out your sound now!
+		</p>
+		<a href="" class="main-btn">Check us out to see more!</a>
 	</div>
 
 
@@ -35,6 +43,18 @@
 <footer>
 	<p>This site was created for the small business of Obvi Audio &copy; Austin Newland</p>
 </footer>
+
+<!-- JavaScript to hide/show menu on mobile device -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+
+</script>
 
 </body>
 </html>
