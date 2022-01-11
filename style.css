@@ -6,7 +6,7 @@
 .header{
 	min-height: 100vh;
 	width:  100%;
-	background-image: linear-gradient(rgba(4, 9,100, 0.6),rgba(4, 9, 30, 0.7)),url(img/speaker1.jpeg);
+	background-image: linear-gradient(rgba(4, 9,10, 0.6),rgba(4, 9, 30, 0.7)),url(img/speaker1.jpeg);
 	background-position: center;
 	background-size: cover;
 	background-position: relative;
@@ -170,12 +170,56 @@ h3{
 .info-col:hover{
 	box-shadow:  0 0 20px 0px rgba(0,0,0,0.3);
 }
+/*next section of info on homepage with pictures*/
+.info2
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+/*images need to be taller than wider*/
+.info2-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.info2-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
 
+}
+.layer:hover{
+	background:rgba(226, 0, 0, 0.7);
 
-
-
-
-
+}
+.layer h3{
+	width: 100%;
+	font-size: 26px;
+	font-weight: 500;
+	color: #fff;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 50%;
+	opacity: 1;
+}
 
 
 
