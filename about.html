@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>Obvi Audio</title>
+	<link rel="icon"  href="img/icon1.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- header element-->
+	<section class="sub-header">
+		<nav>
+			<!-- logo -->
+			<a href="index.html"> <img src="img/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT US</a></li>
+					<li><a href="">PRODUCTS</a></li>
+					<li><a href="">Q&A'S</a></li>
+					<li><a href="">CONTACT US</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>About Us</h1>
+	</section>
+
+
+<!-- Founder info -->
+<!-- Extra info -->
+<section class="founder">
+	<h1>Our Founders</h1>
+	<p>The humble people who made us <br> hover over their picures for more information</p>
+
+	<div class="row">
+		<div class="founder-col">
+			<img src="img/aj.png">
+			<div class="f-layer">
+				<h3>AJ Snyder</h3>
+			</div>
+			<p>Project Lead<br> "Welcome to the future of aqua audio"</p>
+		</div>
+		<div class="founder-col">
+			<img src="img/eddie.png">
+			<div class="f-layer">
+				<h3>Eddie Ward</h3>
+			</div>
+			<p>Director of Engineering <br> "Welcome to the future of aqua audio"</p>
+		</div>
+		<div class="founder-col">
+			<img src="img/sam.png">
+			<div class="f-layer">
+				<h3>Sam Wishon</h3>
+			</div>
+			<p>Business side Brains<br> "With great power comes great responsibility"</p>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+	<h4>Our Pledge</h4>
+	<p>Based out of Indiana, as a small audio business we pledge to provied the best water audio quality possible <br> with an affordable price for anybody!</p>
+	<div class="media-icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Created by &copy Austin Newland</p>
+</footer>
+
+<!-- JavaScript to hide/show menu on mobile device -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
