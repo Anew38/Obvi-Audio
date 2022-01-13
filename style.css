@@ -344,15 +344,16 @@ footer {
 	width: 80%;
 	height: 75%;
 	display: block;
-	border-radius: 10%;
+	border-radius: 20%;
+	padding-left: 30px;
 }
 .founder-col h4{
 	text-align: center;
-	padding-right: 50px;
+	/*padding-right: 50px;*/
 }
 .founder-col p{
 	text-align: center;
-	padding-right: 60px;
+	/*padding-right: 60px;*/
 }
 .f-layer{
 	background: transparent;
@@ -378,6 +379,7 @@ footer {
 	position: absolute;
 	opacity: 0;
 	transition: 0.5s;
+	padding-left: 20px;
 }
 .f-layer:hover h3{
 	bottom: 50%;
